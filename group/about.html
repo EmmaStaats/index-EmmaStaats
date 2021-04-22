@@ -1,0 +1,175 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap" rel="stylesheet">
+ 
+
+</head>
+
+<div class="container">
+  <nav><ul> 
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="stream.html">Stream The NBHD</a> </li>
+        <li><a href="https://thenbhd.com/">Official Website</a> </li>
+        </ul></nav>
+  <main>
+    <h1>The NBHD</h1>
+    <p>The Neighbourhood was established in August of 2011, from Newbury park, california. There are currently 4 members in the neighbourhood consisting of: Jesse Rutherford, Jeremy Freedman, Zach Abels, and Mikey Margott. Jesse Rutherford is the lead singer/vocalist. Jeremy Freedman is the guitarist and background vocalist. Zach Abels is the other guitarist in the band. And lastly, Mikey Margott is the bass guitarist.</p></main>
+  <div id="sidebar">Sidebar</div>
+  <div id="content1"></div>
+  <div id="content2">Content2</div>
+  <div id="content3">Content3</div>
+  <footer><a href="https://open.spotify.com/user/muhhh.rie/playlist/65t7Rh2IdhRrzSEJKau7Eo?si=CYOwjI76Qtipk6jDIz7cMg"></footer>
+</div>
+
+<a href="https://www.youtube.com/watch?v=68O6eOGAGqA">Video Tutorial</a>
+  
+  <style>
+  
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  background-color: #3f4739;
+  
+}
+
+a {
+ color: #717568;
+  font-size: 110%;
+  text-decoration: none;
+    letter-spacing: 2px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: arial, sans-serif;
+    
+}
+
+
+li {
+  display: inline;
+  float: left;
+width: 200px;
+
+}
+
+li a:hover {
+  text-effects: underline;
+  color: white;
+  font-size: 113%;
+  text-align: center;
+    padding: 1px 2px;
+  transition-duration: 0.4s;
+  
+}
+
+
+
+
+main {
+  background:#bacba9;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#sidebar {
+  background: #bacba9;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content1 {
+  background: #bacba9;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  background-size: cover;
+  background-image: url('https://media.juiceonline.com/wp-content/uploads/2018/06/03155431/the-nbhd.jpg')
+}
+
+#content2 {
+  background: #bacba9;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content3 {
+  background: #bacba9;
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+footer {
+  background: #bacba9;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
+
+  
+  </style>
+  </html>
